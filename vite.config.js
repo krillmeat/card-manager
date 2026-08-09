@@ -8,8 +8,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.js'),
-      name: 'MyCardComponents',
-      fileName: 'index',
+      name: 'CardManager',
+      fileName: (format) => `index.${format}.js`,
       formats: ['es','cjs'],
     },
     rollupOptions: {
