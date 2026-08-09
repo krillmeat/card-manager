@@ -10,7 +10,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.js'),
       name: 'MyCardComponents',
       fileName: 'index',
-      formats: ['es'],
+      formats: ['es','cjs'],
     },
     rollupOptions: {
       // Ensure external dependencies aren't bundled into your library
@@ -19,6 +19,7 @@ export default defineConfig({
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          'react/jsx-runtime': 'jsxRuntime',
         },
       },
     },
