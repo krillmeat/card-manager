@@ -14,7 +14,7 @@ export default defineConfig({
     },
     rollupOptions: {
       // Ensure external dependencies aren't bundled into your library
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom','react/jsx-runtime'],
       output: {
         globals: {
           react: 'React',
