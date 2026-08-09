@@ -1,0 +1,30 @@
+.button-group{
+  display: flex;
+
+  button:first-of-type{
+    border-left: .1rem solid #000 !important;
+  }
+
+  button:last-of-type{
+    border-right: none !important;
+  }
+}
+
+button{
+  background: none;
+  border: none;
+
+  &.bar{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: .4rem .8rem;
+    border-right: .1rem solid #000;
+  }
+
+  &:hover{
+    background: #000;
+    color: #FFF;
+    cursor: pointer;
+  }
+}

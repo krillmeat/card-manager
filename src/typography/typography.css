@@ -1,0 +1,9 @@
+p{ font-size: 1.25rem; }
+
+p, span{
+  &.bold{ font-weight: 700; }
+
+  &.uppercase{
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,25 @@
+.decklist{
+
+  &.bordered{ border: .3rem solid #000; }
+  
+  .decklist-head{
+    border-bottom: .3rem solid #000;
+
+    h3{ 
+      font-size: 2rem; 
+      padding: .8rem; 
+        padding-bottom: .2rem;
+    }
+    
+    .source{ 
+      padding: .8rem; 
+      padding-top: 0;
+    }
+
+    .control-bar{
+      display: flex;
+        justify-content: space-between;
+      border-top: .1rem solid #000;
+    }
+  }
+}
