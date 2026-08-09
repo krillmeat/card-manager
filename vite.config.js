@@ -10,6 +10,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.js'),
       name: 'MyCardComponents',
       fileName: 'index',
+      formats: ['es'],
     },
     rollupOptions: {
       // Ensure external dependencies aren't bundled into your library
